@@ -1,3 +1,3 @@
-automated attendance form filler 
-made in y10
+automated attendance form filler \n
+made in y10\n
 not truly automatic as it switches to the website to enter
