@@ -1,1 +1,1 @@
-Various random things created from year 7+.
+Various random things.
