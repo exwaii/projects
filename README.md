@@ -1,1 +1,1 @@
-Various random things.
+various random projects
