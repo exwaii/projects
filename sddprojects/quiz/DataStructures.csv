@@ -1,0 +1,39 @@
+question,a,b,c,d,answer
+Which data structure(s) can hold multiple variables of different types?,Arrays,Records,Arrays and records,None of the other options,B
+Records and arrays are accessed by what respectively?,"Index, field name","Index, Index","Field name, Index","Field name, field name",C
+Which of the following situations would most likely use an array?,A collection of student's marks,A collection of student's parents guardian and contact details,A high score collection of each game played by a player,A collection of student's grades for each course,A
+What data types are used for indexes in arrays?,Strings,Integers,Booleans,None of the other options,B
+Sequential files are?,Used to store data on secondary storage devices,Used to store data on primary storage devices,Used as a type of structure for storing multiple data items,Used as a type of data variable,A
+A record can best be described as:,A data structure containing unrelated data items,A data structure containing related data items all of the same data type,A data structure containing related data items but not necessarily of the same data type.,A data structure containing unrelated data items but all of the same data type.,C
+A dimension or subscript is another name for:,An index,A data item,An array,A record.,C
+What is often added within a file to indicate the end of a sequence of data items?,EOF function,Sentinel values,Boolean values,Carriage return,B
+A one-dimensional array has how many indexes?,One,Two,Multiple,None,C
+Each data item within a record is individually known as:,An array,A file,An element,A field,D
+"Arrays, records and files are examples of:",Data indexes,Data types,Data items,Data structures.,D
+Adam is developing a product and has decided to use a record structure in one of the modules. What must Adam do first to ensure it can be used as a user defined data type?,He must name every field and assign each a data type,"He does not need to name them, just assign each field a data type",He must name them but he does not need to assign each a data type,He cannot create a user defined data type.,A
+A file that can only be accessed from start to finish is a:,Serial file,Sequential file,Random access file,Direct access file,B
+Arrays are used to:,Store multiple items of the same data type,Store multiple items of differing data types,Store a single data item,None of the other options,A
+File access is controlled by:,The browser,The application software,The operating system,The FP Unit,C
+Which best matches the data item with a suitable data type?,A telephone number - Boolean,Student’s personal details - Float,Status of a radio button - Boolean,A list of winning lottery numbers - Real,C
+"The following information is to be kept on all competitors who have been drug tested at an international athletics event: 
+Name
+Age
+Gender 
+Level of substance 1 
+Level of substance 2 
+Level of substance 3 
+Which of the following would be the most suitable data structure in which to store this information?",Array of arrays,Array of records,String,Record,B
+"A company keeps its secure customer details in a file. Each record has the structure
+ ------ ---- ----------
+| name | id | password |
+ ------ ---- ----------
+What is the most appropriate fragment of algorithm to access a record from the file?",READ,"WRITE name(k); id(k); password(k)","READ (customer.name, customer.id, customer.password)","FOR k = 1 to 3 
+      WRITE customer (k) 
+   NEXT k  ",C
+"BEGIN PrintPeople(People) 
+   FOR i = 1 TO the number of people 
+      PRINT People(i).FirstName + “ ” + People(i).LastName 
+   NEXT i 
+END
+What type of data structure is used for the People variable?",Record,Sequential file,A two dimensional array,An array of records,D
+Which of the following is the most appropriate data type for storing telephone numbers?,String,Record,Integer,Float,C

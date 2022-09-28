@@ -1,0 +1,21 @@
+question,a,b,c,d,answer
+Context diagrams are used to show:,the external inputs and outputs into and out of a system.,the data structures used in the design of the system.,the algorithms that have been designed for the system,the top down design of the system,A
+Inputs and outputs are also known as:,Data and processing,Data and information,Information and processing,None of the above,B
+The advantage(s) of the abstraction process is (are):,it encourages the development of reusable modules of code.,it simplifies the testing process.,developers are assured that the work of other members of the team will not affect their own module development.,all of the above.,D
+A useful tool used for describing the steps that will transform the inputs into outputs is:,a context diagram.,an IPO diagram.,a hierarchy chart.,the abstraction process.,A
+A system modelling tool that describes the sequence and top-down design of a problem is known as:,an IPO diagram.,a DFD.,a context diagram.,a structure chart.,B
+"Considering a part of the solution by separating or isolating it, is known as:",modular design.,top-down design.,abstraction.,hierarchy charting.,B
+"Ben is a system analyst, who after spending time researching just what is required of a proposed new system, presents his recommendation to management. Which phase of the software development cycle has Ben been involved with?",Testing and evaluating.,Defining and understanding the problem.,Implementing.,Planning and designing.,A
+"In a DFD, the external entities from which data is obtained are also known as:",sources.,inputs.,sinks.,outputs.,B
+Another name for a level 0 data flow diagram is:,an IPO diagram.,a context diagram.,an algorithm.,a structure chart,B
+Which system model shows the movement of data between subroutines with no specific detail of the order in which subroutines execute?,Structure chart,IPO diagram,DFD,Context diagram,A
+An engineer created a spreadsheet to estimate the cost of her next project. Which software development approach was used to create the spreadsheet?,Agile,End user,Prototyping,Structured,B
+A piece of software is to be developed for people to learn to play the piano. During which stage of the software development cycle should the boundaries of the software first be considered?,Defining and understanding,Planning and designing,Implementing,Testing and evaluating,A
+A developer uses existing modules of code to meet a client’s needs quickly. Which development approach is being used?,Agile,End user,Prototyping,Rapid application development,D
+Which system modelling tool would best help a developer understand the cause of the error?,Context diagram,Storyboard,Structure chart,System flowchart,C
+A project team has been contracted to develop a project but the client is uncertain about the requirements. Which software approach would be best to clarify the requirements?,End user,Structured,Prototyping,Rapid application development,C
+The different steps of the structured software development approach in order are:,"Defining and understanding the problem, Planning and designing, Implementing, Testing and evaluating, Maintaining","Planning and designing, Defining and understanding the problem, Implementing, Testing and evaluating, Maintaining","Implementing, Defining and understanding the problem, Planning and designing, Testing and evaluating, Maintaining","Defining and understanding the problem, Planning and designing, Testing and evaluating, Maintaining, Implementing",A
+"When a projeect is progressively broken down into smaller and more manageable modules, what is the process called?",Left-right design,Top-down design,Down-top design,Right-left design,B
+What is the main aim of using the RAD approach?,Cheaper costs in development,Shorter development times,Easier for the developer to do,Less people required,B
+Techniques that may be useful when determining steps that will solve a problem include:,Considering a smaller version of the problem,Examining solutions to similar or related problems,Brainstorming posibilities with others,All of the above,D
+"When you break down a problem into smaller and more manageable modules, you can ignore the big picture and focus on the smaller pice. This is called:",Disjunction,Detachment,Abstraction,Separation,C
