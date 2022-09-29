@@ -226,9 +226,3 @@ class SpotifyHelper(spotipy.Spotify):
         if result["tracks"]["total"] == 0:
             return None
         return result["tracks"]["items"][0]["id"]
-
-
-# y = YoutubeHelper()
-# print(y.song_names("PLwKmMt97VRboQsy9v0nO7NtIZ9FPk1mqq"))
-# s = SpotifyHelper()
-# s.insert_songs("66rFAZis34nYcd78KtVwKU", ["2Rv0hsvlWB16tCiSKyJW7r"])
