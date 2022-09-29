@@ -61,13 +61,22 @@ def example_youtube_to_spotify(playlist_id, title="test", public="True"):  # exa
     return spotify_playlist_url(spotify_playlist_id)
 
 
+def update_ytplaylist(yt_playlist, spotify_playlist, position):
+    yt = client.YoutubeHelper()
+    spotify = client.SpotifyHelper()
+    # get song names from spotify playlist
+    names = spotify.song_names(spotify_playlist)
+    # get youtube video ids from song names
+    ids = [yt.song_search(name) for name in names][position-1:]
+    # add to youtube playlist
+    yt.insert_songs(yt_playlist, ids)
+    # return youtube playlist url
+    return yt_playlist_url(yt_playlist)
+
+
 def main():
 
-    #yt = YtHelper()
-    # spotify = client.SpotifyHelper()
-    # names = spotify.song_names("4VmFt9QWKcOQM31P3xAJSC")
-    # spot_url = f"https://open.spotify.com/playlist/{id}"
-    print(example_spotify_to_youtube("4Da8V09UnKBsYTmPQS77oE", "☆", "True"))
+    print(update_ytplaylist("PLwKmMt97VRbpX0FxQ3DMgRIX86je2icGo", "4Da8V09UnKBsYTmPQS77oE", 35))
 
 
 if __name__ == "__main__":
