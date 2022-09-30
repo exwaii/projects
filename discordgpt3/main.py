@@ -16,21 +16,9 @@ intents = discord.Intents.default()
 intents.members = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
-# AI = "The following is a conversation with an AI assistant. The assistant is very cheerful and smart."
-AI = "The following is a conversation with a super-intelligent friend. The friend is very smart and witty"
-# AI = "The following is a conversation between a teenage boy and his seductive girlfriend. His girlfriend is very attractive."
-# print(f"GPT3: {response['choices'][0]['text']}")
-# convo += response["choices"][0]["text"]
-# human_response = input("Human: ")
-# if human_response == "exit":
-#     break
-# convo += "\nHuman:"
-# convo += human_response
-# convo += "\nGPT3:"
-# with open("convos.txt", "a", encoding="utf-8") as file:
-#     file.write(convo)
-#     file.write("\n\n")
-users = []
+prompt = "The following is a conversation with a super-intelligent friend. The friend is very smart and witty"
+
+users = [os.environ.get("XY"), os.environ.get("MEGULOLI"), os.environ.get("CAASI"), os.environ.get("TOOTHLESS")]
 conversations = {}
 
 
@@ -38,16 +26,9 @@ conversations = {}
 async def on_ready():
     global user_xy, user_meguloli
     print('we have on as {0.user}'.format(bot))
-    user_meguloli = bot.get_user(669524792306565141)
-    user_xy = bot.get_user(358971085313540097)
-    user_isaac = bot.get_user(394318698116022302)
-    user_zhong = bot.get_user(454221326471659520)
-    users.append(user_xy)
-    users.append(user_meguloli)
-    users.append(user_isaac)
-    users.append(user_zhong)
-    for user in users:
-        conversations[user.name] = AI + "\n"
+    users = [bot.get_user(id) for id in users]
+    conversations = {user.name : prompt + "\n" for user in users}
+
     # channel = await bot.fetch_channel(926793922762645514)
     # message = await channel.fetch_message(926806836068376597)
     # await message.delete()
@@ -62,7 +43,11 @@ async def on_message(message):
         talking_user = message.author
         if message.content == "!clear":
             print(conversations[talking_user.name])
-            conversations[talking_user.name] = AI + "\n"
+            with open("convos.txt", "a", encoding="utf-8") as file:
+                file.write(talking_user.name + "\n")
+                file.write(conversations[talking_user.name])
+                file.write("\n\n")
+            conversations[talking_user.name] = prompt + "\n"
             return
         if len(conversations[talking_user.name]) > (1600 * 4):
             await talking_user.send("please !clear the conversation has been too long if u wanna continue i can try "
@@ -82,6 +67,7 @@ async def on_message(message):
             frequency_penalty=2.0,
         )
         ai_msg = response['choices'][0]['text']
+        #ai_msg = "h"
         conversations[talking_user.name] += ai_msg + "\n"
         await talking_user.send(ai_msg)
         print(ai_msg[1:])
