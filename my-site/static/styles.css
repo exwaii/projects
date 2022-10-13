@@ -1,0 +1,125 @@
+
+body {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    color: #66BFBF;
+    font-size: 90px;
+    margin: 50px auto 0 auto;
+    line-height: 2;
+}
+h2 {
+    color: #66BFBF;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 20px;
+}
+h3 {
+    color: #11999E;
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    color: #2838c7;
+    margin: 50px;
+}
+
+hr {
+    border-style: dotted none none none;
+    width: 10%;
+    border-width: 10px;
+    color: aquamarine;
+    margin: 40px auto 40px auto;
+}
+.btn {
+    background: #2430e0;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin: 50px;
+}
+
+.btn:hover {
+    background: azure;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+.top-container {
+    padding-top: 100px;
+    background-color: #FFCDDD;
+}
+.middle-container {
+
+}
+.bottom-container {
+    padding: 40px 0 20px 0;
+    background-color: #66BFBF;
+}
+.top-cloud {
+    position: absolute;
+    right: 600px;
+    top: 50px;
+}
+.bottom-cloud {
+    position: absolute;
+}
+.skill-row {
+    width: 50%;
+    margin: 50px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+.profile {
+    margin: 20px auto 20px auto;
+}
+.codingimg {
+    margin-right: 30px;
+    width: 20%;
+    float: left;
+}
+.genshinimg {
+    margin-left: 50px;
+    width: 20%;
+    float: right;
+}
+.mathimg {
+    margin-right: 30px;
+    width: 20%;
+    float: left;
+}
+.footer-link {
+    color: #161f9c;
+    margin-bottom: 500px;
+}
+
+.footer-link:hover {
+    color: azure;
+    text-decoration: underline;
+}
+
+.mountain {
+    float: bottom;
+    bottom: -1;
+}
+
+.contact-me {
+    margin: 20px auto 40px auto;
+}
