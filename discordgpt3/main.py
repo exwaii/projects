@@ -29,11 +29,6 @@ async def on_ready():
     users = [bot.get_user(id) for id in users]
     conversations = {user.name : prompt + "\n" for user in users}
 
-    # channel = await bot.fetch_channel(926793922762645514)
-    # message = await channel.fetch_message(926806836068376597)
-    # await message.delete()
-    # HOW TO SAVE AWAIT RESULTS, HOW TO DELETE MESSAGE LFGGGG
-
 
 @bot.event
 async def on_message(message):
